@@ -1,10 +1,10 @@
 {
-  "name": "css-require-transform",
+  "name": "transform-css-require",
   "version": "1.0.0",
   "main": "build/index.js",
   "author": "Andreas Bielk",
   "license": "MIT",
-  "script": {
+  "scripts": {
     "build": "babel src --out-dir build",
     "start": "babel src --out-dir build --watch"
   },

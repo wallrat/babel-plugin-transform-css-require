@@ -3,9 +3,6 @@ import { fetchCssModule } from './css'
 
 export default function ({types: t}) {
   return {
-    // pre(state) {
-    // },
-
     visitor: {
       ImportDeclaration(path, { file }) {
           // this method is called between enter and exit, so we can map css to our state
@@ -18,9 +15,9 @@ export default function ({types: t}) {
             return
           }
 
-          // default specifier
-          const defaultSpecifier = path.node.specifiers[0].local.name
-          console.log('defaultSpecifier',defaultSpecifier)
+          // default specifier (import XXX from './foo.css')
+          // const defaultSpecifier = path.node.specifiers[0].local.name
+          // console.log('defaultSpecifier',defaultSpecifier)
 
           // replace with require
           path.replaceWith(
