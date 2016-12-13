@@ -1,6 +1,6 @@
 {
   "name": "transform-css-require",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "build/index.js",
   "author": "Andreas Bielk <andreas.bielk@six-group.se> (http://www.six.se)",
   "license": "MIT",
