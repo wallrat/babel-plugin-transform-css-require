@@ -10,8 +10,6 @@ function resolveModulePath(filename) {
 }
 
 export function fetchCssModule(fromFile,moduleName) {
-  console.log('fetchCssModule',fromFile,moduleName)
-
   let filename = moduleName
 
   // only resolve path to file when we have a file path
@@ -21,10 +19,8 @@ export function fetchCssModule(fromFile,moduleName) {
    } else {
      filename = "./node_modules/" + moduleName
    }
-   console.log('filename',filename)
 
   const absolute = isAbsolute(filename) ? filename : resolve(filename)
-  console.log('absolute', absolute)
 
   if (!existsSync(absolute)) {
     return null;
